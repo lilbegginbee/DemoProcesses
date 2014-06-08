@@ -1,0 +1,43 @@
+<?php
+    if (!$this->done):
+?>
+
+<div class="col-lg-5 well">
+    <form class="form-signin" name="auth" method="post" action="<?=$this->url(array(), 'registration')?>" id="authForm">
+        <div class="login-screen">
+            <div class="login-form">
+
+                <?=$this->FormErrors($this->form)?>
+
+                <?=$this->ElementsErrors($this->form)?>
+
+                <div class="form-group">
+                    <input name="login" type="text" id="inputLogin" placeholder="Логин" value="<?= $this->form->login->getValue() ?>" class="form-control"  autocomplete="off">
+                    <i class="login-field-icon fa fa-user"></i>
+                </div>
+
+                <div class="form-group">
+                    <input name="password" type="password" id="inputPass" placeholder="Пароль" value="<?= $this->form->password->getValue() ?>" class="form-control" autocomplete="off">
+                    <i class="login-field-icon fa fa-lock"></i>
+                </div>
+
+                <div class="form-group">
+                    <input name="email" type="text" id="inputEmail" placeholder="Email" value="<?= $this->form->email->getValue() ?>" class="form-control" autocomplete="off">
+                    <i class="login-field-icon fa fa-lock"></i>
+                </div>
+
+                <button type="submit" class="authSubmit btn btn-info btn-large btn-block">Продолжить</button>
+
+                <!--a href="/recover_password" class="login-link">Забыли пароль?</a-->
+            </div>
+        </div>
+    </form>
+</div>
+
+<?php
+    else:
+?>
+        Вам отправлена ссылка для активации вашего аккаунта.
+<?php
+    endif;
+?>

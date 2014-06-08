@@ -1,0 +1,14 @@
+	<div class="alert alert-danger" style="margin-top:30px">
+		<h4>Обнаружена ошибка</h4>
+		<h2><?php echo $this->message ?></h2>
+		<?php if (isset($this->exception)): ?>
+			<h5>Exception information:</h5>
+			<p><b>Message:</b> <?php echo $this->exception->getMessage() ?></p>
+
+			<h5>Stack trace:</h5>
+			<pre><?php echo $this->exception->getTraceAsString() ?></pre>
+
+			<h3>Request Parameters:</h3>
+			<pre><?php echo var_export($this->request->getParams(), true) ?></pre>
+		<?php endif ?>
+	</div>

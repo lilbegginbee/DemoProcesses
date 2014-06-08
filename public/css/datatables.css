@@ -1,0 +1,6 @@
+table.dataTable thead th {
+    border-bottom: 2px solid #3498db!important;
+}
+table.table thead tr th {
+    font-weight: normal!important   ;
+}

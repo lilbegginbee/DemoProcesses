@@ -1,0 +1,386 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    height: 100%;
+    font-family: "SwedbankSans",sans-serif;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+.hero-unit{
+    margin-bottom: 0;
+}
+
+/* new css */
+
+
+/***
+Apply fix for font awesome icons.
+***/
+[class^="icon-"],
+[class*=" icon-"],
+[class^="icon-"]:hover,
+[class*=" icon-"]:hover {
+    background: none !important;
+}
+
+/***
+Make font awesome icons fixed width(latest version issue)
+***/
+li [class^="icon-"],
+li [class*=" icon-"] {
+    display: inline-block;
+    width: 1.25em;
+    text-align: center;
+}
+li [class^="icon-"].icon-large,
+li [class*=" icon-"].icon-large {
+    /* increased font size for icon-large */
+    width: 1.5625em;
+}
+
+
+/* end of new css */
+
+select, input, button, a { outline: none !important; }
+
+/* fonts */
+.b { font-weight: bold;}
+.f14{ font-size: 14px!important;}
+.f16{ font-size: 16px!important;}
+.f18{ font-size: 18px!important;}
+.upper {text-transform: uppercase;}
+
+/* margins */
+.m10{margin:10px!important}
+.mt5{margin-top:5px!important}
+.mt10{margin-top:10px!important}
+.mt20{margin-top:20px!important}
+.mt30{margin-top:30px!important}
+.mt40{margin-top:40px!important}
+.mt50{margin-top:50px!important}
+.mt550{margin-top:550px!important}
+.mt600{margin-top:600px!important}
+.mb10{margin-bottom:10px!important}
+.mb20 {margin-bottom: 20px; }
+.ml10{margin-left:10px!important}
+.mlm10{margin-left:-10px!important}
+.ml20{margin-left:20px!important}
+.ml30{margin-left:30px!important}
+.ml40{margin-left:40px!important}
+.ml50{margin-left:50px!important}
+.mr10{margin-right:10px!important}
+.mr20{margin-right:20px!important}
+
+/* padding */
+.p0{padding: 0!important;}
+.p5{padding:5px!important}
+.p10{padding:10px!important}
+.p20{padding:20px!important}
+.pt5{padding-top:5px!important}
+.pt10{padding-top:10px!important}
+.pt20{padding-top:20px!important}
+.pt30{padding-top:30px!important}
+.pt40{padding-top:40px!important}
+.pt50{padding-top:50px!important}
+
+.pl20{padding-left:20px!important}
+
+
+.clr { clear: both; }
+.w15 { width: 15px; }
+.w20 { width: 20px; }
+.w30 { width: 30px; }
+.w50 { width: 50px; }
+.w60 { width: 60px; }
+.w64 { width: 64px; }
+.w80 { width: 80px; }
+.w90 { width: 90px; }
+.w100 { width: 100px; }
+.w110 { width: 110px; }
+.w120 { width: 120px; }
+.w150 { width: 150px; }
+.w200 { width: 200px; }
+.w250 {  width: 250px; }
+.w300 { width: 300px; }
+.w330 { width: 330px; }
+.w350 { width: 350px; }
+.w400 { width: 400px; }
+.w470 { width: 470px; }
+.w500 { width: 500px; }
+.w650 { width: 650px; }
+.w675 { width: 675px; }
+
+.w100p { width: 100%!important; }
+
+.h64 { height: 64px; }
+.h80 { height: 80px; }
+.h100 { height: 100px; }
+.h200 { height: 200px !important; }
+.h300 { height: 300px; }
+.h350 { height: 350px !important; }
+
+.floatl { float: left; }
+.floatr { float: right; }
+
+.right {text-align: right !important;}
+.center {text-align: center;}
+.left {text-align: left;}
+
+.relative {    position: relative; }
+
+.hide {    display: none; }
+
+.overflownh { overflow: visible!important; }
+.overflowh{    overflow: hidden; }
+
+.clr { clear: both; }
+
+.cpointer { cursor: pointer; }
+
+.grayed {color: #aaa !important;}
+
+.maw980 {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.maw960 {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.icon {
+	padding-left: 20px !important;
+	line-height: 20px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	min-height: 16px;
+	font-size: 14px;
+}
+
+.icon_only {
+	width: 20px !important;
+	text-indent: -2000px !important;
+	overflow-x: hidden;
+	background-position: center center;
+}
+
+i.icon { font-style: normal;}
+
+.xbutton2 .icon {
+	line-height: 26px;
+}
+
+.icon_status_green { background-image: url("/images/icons/fugue/status.png");}
+.icon_status_gray { background-image: url("/images/icons/fugue/status-offline.png");}
+.icon_calendar { background-image: url("/images/icons/fugue/calendar.png");}
+.icon_green_plus { background-image: url("/images/icons/fugue/plus-circle.png");}
+.icon_info_white { background-image: url("/images/icons/fugue/information-white.png");}
+.icon_table { background-image: url("/images/icons/fugue/table.png");}
+.icon_print { background-image: url("/images/icons/fugue/printer.png");}
+.icon_door { background-image: url("/images/icons/fugue/door.png");}
+.icon_warn {background-image: url("/images/icons/fugue/exclamation.png");}
+.icon_cancel_small {background-image: url("/images/icons/fugue/prohibition-small.png");}
+.icon_category_group {background-image: url("/images/icons/fugue/category-group.png");}
+.icon_start {background-image: url("/images/icons/fugue/control.png");}
+.icon_users {background-image: url("/images/icons/fugue/users.png");}
+.icon_fav {background-image: url("/images/icons/fugue/star-small-empty.png");}
+.icon_faved {background-image: url("/images/icons/fugue/star-small.png"); background-position: 0px 5px !important;}
+.icon_edit { background-image: url(/images/icons/edit.png); }
+.icon_delete { background-image: url(/images/icons/fugue/cross-small.png); }
+.icon_list { background-image: url(/images/icons/view_list.png); }
+
+.icon_draft {background-image: url("/images/icons/fugue/document--plus.png");}
+
+/**/
+#navigation {
+	height: 72px;
+	background-image: url("/images/new_bg_blue4.jpg");
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center -254px;
+	/*border-bottom: 1px solid #215787;*/
+}
+
+#logo { float: left; }
+
+#logo span {
+	display: block;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-shadow: 0 -1px 0 #0c5a84;
+	margin: 20px 0 2px 0;
+
+}
+
+#logo h1 {
+	margin: 0 0 0 1px;
+	padding: 0;
+	width: 279px;
+	display: block;
+	height: 20px;
+	text-indent: -1000px;
+	background: transparent url("/images/nzsh.png") no-repeat top left;
+}
+
+#logo h1 a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+#menu {
+	float: right;
+	position: absolute;
+	z-index: 3;
+	margin-left: 330px;
+}
+
+.ucp #menu {
+	position: inherit !important;
+	margin-left: 0px;
+}
+
+#menu li {
+	color: #efefef;
+}
+
+#menu li > a, #menu li.info  {
+	color: #FFFFFF;
+	display: block;
+	font-size: 11px;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 #0c5a84;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 15px;
+	height: 62px;
+	padding: 10px 7px 0 7px;
+}
+
+#menu h1 a{
+    color: white;
+}
+#menu h1 a:hover {
+    background: transparent;
+}
+
+#menu li.info {
+	text-align: right;
+	font-size: 10px;
+	width: 350px;
+}
+
+#menu li.info h1 {
+	font-size: 14px;
+
+}
+
+#menu li.active a {
+	background-color: #4E6F89;
+}
+
+#menu .separator {
+	width: 2px;
+	height: 42px;
+	background: url("/images/separator.png") no-repeat scroll center center transparent;
+}
+
+#menu ul {
+	z-index: 2;
+	margin:0;
+	padding:0;
+}
+
+#menu ul li {
+	list-style: none;
+	float: left;
+}
+
+input:placeholder,
+input:-moz-placeholder,
+input:-webkit-input-placeholder,
+input:-ms-input-placeholder,
+textarea:placeholder,
+textarea:-moz-placeholder,
+textarea:-webkit-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #95a5a6 !important;
+}
+
+/* Tables */
+.row_new{
+    background: #CCF1CC;
+    opacity: 0;
+}
+
+.row_pay_attention{
+    background: #FFDDDD;
+}
+
+/* end tables */
+
+/* дерево */
+.dynatree-container{
+    margin-bottom: 20px!important;
+}
+
+/*#table_wrapper {
+    height: 500px;
+    overflow: scroll;
+}*/
+
+.newBrowsersList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.newBrowsersList li {
+	float: left;
+	width: 64px;
+	margin-right: 20px;
+
+}
+
+.newBrowsersList li a {
+	display: block;
+	padding-top: 70px;
+	text-align: center;
+	background: transparent none no-repeat top center;
+}
+
+.newBrowsersList li a.firefox   { background-image: url("/images/icons/browsers/firefox-64.png"); }
+.newBrowsersList li a.opera     { background-image: url("/images/icons/browsers/opera.png"); }
+.newBrowsersList li a.ie        { background-image: url("/images/icons/browsers/ie_logo.png"); }
+.newBrowsersList li a.safari    { background-image: url("/images/icons/browsers/safari.png"); }
+.newBrowsersList li a.chrome    { background-image: url("/images/icons/browsers/chrome-64.png"); }
+
+
+/* recomendations */
+.recomendations__excelent{
+    color: green;
+    font-weight: bold;
+}
+.recomendations__good{
+    color: #89B13F;
+    font-weight: bold;
+}
+.recomendations__normal{
+    color: #8b0000;
+    font-weight: bold;
+}
+.recomendations__low{
+    color: red;
+    font-weight: bold;
+}
+.recomendations__zero{
+    color: red;
+    font-weight: bold;
+}
+
+

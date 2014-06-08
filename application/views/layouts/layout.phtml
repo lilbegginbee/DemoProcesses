@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <?php echo $this->headLink(); ?>
+    <link href="/css/common.css" media="screen" rel="stylesheet" type="text/css" >
+    <?php echo $this->headScript(); ?>
+    <?php echo $this->headTitle(); ?>
+    <?php echo $this->headMeta(); ?>
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand">Сервис процессов</a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+
+            <ul class="nav navbar-nav navbar-right">
+                <?php if(CORE_User::getRole() == CORE_User::ROLE_GUEST): ?>
+                    <li><a href="<?=Zend_Controller_Front::getInstance()->getRouter()->assemble(array(),'auth')?>">Логин</a></li>
+                    <li><a href="<?=Zend_Controller_Front::getInstance()->getRouter()->assemble(array(),'registration')?>">Регистрация</a></li>
+                <?php else: ?>
+                    <li><a href="<?=Zend_Controller_Front::getInstance()->getRouter()->assemble(array(),'logout')?>">Выход</a></li>
+                <?php endif; ?>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+    <div class="bs-docs-section page-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="page-header">
+                    <h1 id="buttons"><?=$this->pageTitle?></h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-10">
+                <?=$this->layout()->content?>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+</body>
+</html>

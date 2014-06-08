@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-lg-5 well">
+        <form class="form-signin" method="post" action="<?=$this->url(array(), 'processesAdd')?>" id="processesAdd">
+
+                    <?=$this->FormErrors($this->form)?>
+
+                    <?=$this->ElementsErrors($this->form)?>
+
+                    <div class="form-group">
+                        <input name="title" type="text" placeholder="Название процесса" value="<?= $this->form->title->getValue() ?>" class="form-control"  autocomplete="off"/>
+                        <i class="login-field-icon fa fa-user"></i>
+                    </div>
+
+                    <div class="form-group">
+                        <input name="duration" type="text" placeholder="Время выполнения (сек)" value="<?= $this->form->duration->getValue() ?>" class="form-control" autocomplete="off"/>
+                        <i class="login-field-icon fa fa-lock"></i>
+                    </div>
+
+                    <button type="submit" class="authSubmit btn btn-info btn-large btn-block">Добавить</button>
+
+        </form>
+    </div>
+</div>

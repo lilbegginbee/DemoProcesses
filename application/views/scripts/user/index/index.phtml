@@ -1,0 +1,17 @@
+<?php echo $this->partial('error/notice_list.phtml', array('fmessages' => $this->fmessages)); ?>
+
+<div class="mb20">
+    <a class="btn btn-success" href="<?=$this->url(array(),'processesAdd')?>">Добавить процесс</a>
+</div>
+
+<div id="processesGrid"></div>
+
+<script type="text/javascript">
+    $(function(){
+
+        Processes.init('/api/<?=Zend_Registry::get('config')->api->version?>/',
+                        $('#processesGrid'));
+        Processes.refresh();
+
+    })
+</script>
